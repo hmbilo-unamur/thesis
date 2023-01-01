@@ -79,8 +79,9 @@ Il s'agit du laps de temps durant lequel le gateway G effectue une prévision pr
 Soit pour chaque dispositf i, $\tau^{af}_i$ = K$_i$$\tau_i$.
 Une des contraintes importantes de cette approche est que la plus longue intervalle de planification possible, désignée par $\tau_sch$, doit être égale à l'horizon de prévision minimum de l'ensemble des appareils de la zone de couverture du gateway.
 Ainsi une plannification des canaux de transmission ne pourra pas être effectuée correctement, car les appareils dont l'horizon de prévision est supérieur à cette limite ne seront pas pris en compte.
-L'approche novatrice dans ce tavail est que l'ensemble des bits provenants d'une station est représenté sur plusieurs échelles de temps. Pour ce faire, les bits sont additionnées, récursivement, à des blocs d'intervalle temporelle (time slot) de plus en plus large. 
-Nous avons donc la formule suivante : $X_{i} (B) = \sum_{b\epsilon S_B} X_{i} (b)$. A chaque échelle temporelle, nommé $\textiota
+L'approche novatrice dans ce tavail est que l'ensemble des bits provenants d'une station est représenté sur plusieurs échelles de temps. Pour ce faire, les bits sont additionnées, récursivement, à des blocs d'intervalle temporelle (time slots) de plus en plus large. 
+Aussi, nous avons la formule suivante : $X_{i} (B) = \sum_{b\epsilon S_B} X_{i} (b)$. Au niveau 0, l'ensemble des données contenu dans un bloc, désigné par b, prennent toute la taille de l'intervalle de temps (ou time slot).
+Ensuite chaque niveau supérieur $\iota + 1$ contient des ensembles contingus de blocs qui ne se chevauchent pas. Ainsi, par exemple, le niveau 0 contient l'ensembles de blocs seront regroupés au niveau $\iota + 1$ pour former un bloc désigné par B, et deviendront ainsi un sous bloc de B, que l'on peut nommer S$_B$. 
 
 
 

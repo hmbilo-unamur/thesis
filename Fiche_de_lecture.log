@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.13)  1 JAN 2023 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.12.13)  1 JAN 2023 21:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/PROJETS/UNAMUR/Ids/Memoire/Fiche_de_lecture.tex
-(d:/PROJETS/UNAMUR/Ids/Memoire/Fiche_de_lecture.tex
+**d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche_de_lecture.tex
+(d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche_de_lecture.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2022-11-02> (d:/SOFTWARES/Latex/texlive/2022/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -318,14 +318,14 @@ Package rerunfilecheck Info: File `Fiche_de_lecture.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  9557 strings out of 474968
- 154095 string characters out of 5772096
+ 154116 string characters out of 5772096
  504302 words of memory out of 5000000
  30940 multiletter control sequences out of 15000+600000
  475582 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,6n,77p,448b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,6n,77p,455b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Fiche_de_lecture.pdf (5 pages, 97897 bytes).
+Output written on Fiche_de_lecture.pdf (5 pages, 98784 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
