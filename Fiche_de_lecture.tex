@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\usepackage{mathtools}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+
+\usepackage[utf8]{inputenc}
+
+\title{My LaTeX Title}
+
+\author{Guillaume Blanchet}
+
+\date{2020–01–13}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+L'internet des objets à un impact considérable sur nos vies, et-ce à plusieurs niveau.
+Nous les portons sur nous, sous forme de montres, de capteurs biométriques ou physiologiques,
+de lunettes ou casque à réalité virtuelle et de vêtements connectés. Ces technologies portables 
+ont pour objectif de nous aider à améliorer notre santé, notre bien-être ainsi que notre sécurité.
+Dans nos maisons, la domotique se développe à une vitesse grand V. Aujourd'hui, plus besoins de se soucier de l'approvisionnement alimentaire, car le réfrigérateur
+sait quand il n'y a plus assez de lait et le cellier de sucre ou de café. Dès lors, un signale est envoyé à un robot majordome qui effectue 
+la commande à la boutique adéquate. Outre, la gestion de stock alimentaire, ce dernier peut orchestrer différents travaux ménagers tels que le repassage,le nettoyage et la tonte de gazon,
+en gérant les actions des robots domestiques (aspirateurs, robot de repassages, etc).
+A l'échelle d'une ville, on assiste à l'évènement des voitures autonomes. Ces véhicules intelligents peuvent communiquer entre eux afin de garantir
+la fluidité et la sécurité du traffic routier. 
+\subparagraph{}Plus généralement, les technologies de l'information couplés 
+avec les appareils connectés permettent de mieux gérer les ressources et services urbains,tels que l'energie, la qualité de l'air et les parkings.
+La motivation majeur serait d'apporter une nette amélioration d'un point de vue environnemental, économique ou social.
+Statista estime que d'ici 2030 il pourrait y avoir plus de 29 milliards d'objets connectés à travers le monde.
+\subparagraph{} Les systèmes de télécommunications ont des besoins très différents en termes de portée, de volume et de fréquences d'informations échangées. 
+Ainsi les objets connectés peuvent envoyer plus d'une centaine messages par jour, à des débits d'environ 385 kilobits par seconde (comme par exemple pour le protocole LTE-M).
+Ceci multiplié par le nombre de dispositifs connectés sans cesse grandissant, pousse les experts du domaine à proposer des technique de connectivité massive tout en garantissant des performances fiables ainsi qu'une meilleure qualité de service.
+\section{Résumé}
+Jusqu'à présent, les chercheurs et experts du domaine se sont surtout concentrés sur des approches d'accès multiples basé sur les protocoles RA (en anglais Random Access). 
+Pour cause, cette technique, implémentée sur la couche MAC (Medium Access Control) du niveau 2 (Liaison de données) du modèle OSI, offre l'avantage de ne pas surcharger le réseau par le trafic de signalisation généré par les processus d'établissement de liaison, tel que le handshaking lors de la connexion initiale entre les appareils connectés et la station de base.
+Autre avantage majeur de ces protocoles, la station de base n'est plus responsable de l'allocation des ressources pour un trafic donné, car chaque utilisateur peut envoyer les données sans, au préalable, en avoir l'autorisation à condition de suivre la procédure prédéfinis.
+Ce qui augmente considérablement la limite du nombre d'objets connectés pouvant être supportés par le système.
+
+\subparagraph{}Parmis les approches de type RA, nous pouvons citer les plus prometteuses telles que le NOMA (Non Orthogonal Multiple Access) qui superpose les signaux des appareils sur la même de bande de fréquence,
+ l'ACB (Class Barring Access schemes) qui limite les congestions en interdisant temporairement (en fonction de paramètres prédéfinis) l'accès réseau à certains dispositifs connectés,
+le CSMA/CA qui évite les collisions en respectant trois principes : la fenêtre de contention, l'espace intertrame et les acquittement, et la dernière approche est Sloted-Aloha-base qui divise le temps de transmission d'un canal en intervalle de temps appelé "time slot".
+L'envoi de données n'est autorisé qu'au début d'un time slot. Si l'objet connecté n'effectue pas la transmissions à temps, il doit attendre le prochain time slot, ce qui réduit considérablement la probabilité de collision.
+\subparagraph{}Les protocoles basés sur la technique RA sont moins complexes, néanmoins leurs performances restent, selon les auteurs, limité par leur caractère réactive, car elle ne font que réagir à la demande du trafic.
+Pour répondre à ces problème de performances, les auteurs proposent une toute nouvelle approche, dite proactive, basée sur la méthodologie de prédiction et ordonnancement conjoints (en anglais JSF pour Joint forcasting-scheduling). 
+Le but de cette approche  est de prévoire le modèle de génération de trafic de chaque dispositif connecté afin de préallouer des canaux de transmissions.
+De ce fait, le nombre de control signalant des congestions est réduit au minimum, les retards provoqués par les conflits, les collisions et les handshaking seront évités.
+Afin d'obtenir le meilleur Qos (Quality of service) possible, l'approche JSF ce base sur l'algorithme MLP (Multi-Layer Perceptron) pour effectuer les prévisions.
+Il s'agit d'un algorithme de type réseau neuronal à propagation directe. Celui-ci combiné avec un système d'ordonnancement adapté peut considérablement accroitre le débit attendu, minimiser les retards dans les transmissions et ainsi améliorer les performances du réseau.
+
+\subparagraph{}Dans ce travail écrit nous nous interesserons plus particulièrement à cette nouvelle approche conçu par les ingénieurs-chercheurs Volkan Rodoplu, Mert Nakıp,  Deniz T¨ursel Eliiyi et C¨uneyt G¨uzelis. 
+En effet, dans l'article intitulé "A Multi-Scale Algorithm for Joint Forecasting-Scheduling to Solve the Massive" les auteurs décrivent cet algorithme dont le but est de prévoire le trafic réseau d'un dispositf Iot en vue d'allouer en avance un canal de Liaison montante. 
+En raison de sa nature multi-échelle (opérant à plusieurs échelle de temps), cet technique garantie une complexité temporelle et spaciale évolutive permettant de supporter plus de 6650 dispositfs iot.
+De plus, l'algorithme permet de maintenir le pourcentage du control de congestion du débit à un niveau relativement bas, soit inférieur à 1,5 pourcent. Garantissant ainsi un haut débit de transmission.
+Le MSA est implémenté dans une passerelle Iot afin de répondre au problème d'accès massive survenant dans la couche MAC.
+
+\subparagraph{} Des études ont démontrées que, sur plus de 3000 appareils connectés, les performances de cette approche était significativement plus élevées que trois autres protocoles conçus par les auteurs, qui proposent des approches tout aussi intéréssante.
+Ainsi des comparaisons de consommation énergétique et de débit ont été effectués entre le MSA-JFS et les méthodes suivantes.
+Le premier protocole est le Reservation-based Access Barring (RAB) qui est une technique de type réactive combinant des fonctionnalités des approches ACB (Access Class Barring) et de RBS (Reservation Based Scheduling), le deuxième est le protocole de priorité basé sur la charge moyenne (en anglais Priority Based on Average - PAL)
+, il s'agit d'une méthode proactive se basant sur l'algorithme d'ordonnancement non préemptif qui classe les signaux par ordre de priorité en fonction de la charge de trafic restante, calculée sur base de la durée moyenne d'un délai de transmission.
+La troisième technique, Enhanced Predictive Version Burst (E-PRV-BO) est de type proactive, elle est issue du protocole PRV-PO (Predictive Version Packet Oriented) dont elle améliore certaines fonctionnalités.
+
+\subparagraph{} Dans ce système basé sur l'algorithme MSA, le gateway execute un forcaster, pendant un créneau temportelle spécifique, pour prévoire le modèle de trafic inhérent à chaque dispositif IOT dans le but de planifier un intervalle de temps dans lequel les liaisons montantes seront transmises sans risque de collision avec les liaisons descendantes. 
+Pour ce faire, la technique de duplexage TDD (Time division Duplex) est utilisée. Celle-ci a la particularité de séparer les voies montantes et descendantes par un intervalle de garde, tout en garantissant que les caractéristiques du canal soient semblables sur les deux voies.
+Le gateway s'appuie sur le dernier modèle de trafic d'un dispositif connecté afin de prévoire le prochain modèle. Pour réalisé cette tâche, il garde constament en mémoire les caractéristiques du modèle courant qu'il utilise dans le processus d'apprentissage du trafic.
+
+\subparagraph{} Le fonctionnement des algorithmes MSF (Multi-scale Forecasting) est le suivant, pour chaque dispositif connecté désigné par i, une période de génération de traffic est définis, $\tau_i$. Elle correspond à la durée minimale entre chaque instance de génération de trafic successive.
+Le temps requis par les dispositifs connectés pour la génération d'un packet est un multiple de cette intervalle (en supposant que les dispositfs génèrent des données à intervalle régulier).
+Cette période est en corrélation avec l'horizon de prévision $\tau^{af}_i$.
+Il s'agit du laps de temps durant lequel le gateway G effectue une prévision précise du trafic d'un dispositf connectés. Les prévisions peuvent être précises jusqu'à un certains nombre d'échantillonsn désigné par K$_i$.
+Soit pour chaque dispositf i, $\tau^{af}_i$ = K$_i$$\tau_i$.
+Une des contraintes importantes de cette approche est que la plus longue intervalle de planification possible, désignée par $\tau_sch$, doit être égale à l'horizon de prévision minimum de l'ensemble des appareils de la zone de couverture du gateway.
+Ainsi une plannification des canaux de transmission ne pourra pas être effectuée correctement, car les appareils dont l'horizon de prévision est supérieur à cette limite ne seront pas pris en compte.
+L'approche novatrice dans ce tavail est que l'ensemble des bits provenants d'une station est représenté sur plusieurs échelles de temps. Pour ce faire, les bits sont additionnées, récursivement, à des blocs d'intervalle temporelle (time slot) de plus en plus large. 
+Nous avons donc la formule suivante : $X_{i} (B) = \sum_{b\epsilon S_B} X_{i} (b)$. A chaque échelle temporelle, nommé $\textiota
+
+
+
+
+
+\begin{itemize}
+
+\item Hey
+
+\item Oh!
+
+\item Let’s
+
+\item Go!
+
+\end{itemize}
+
+\end{document}
