@@ -1,0 +1,48 @@
+\begin{thebibliography}{1}
+
+\bibitem{Boutaba:2018}
+R.~Boutaba and al.
+\newblock A comprehensive survey on machine learning for networking: Evolution
+  applications and research opportunities.
+\newblock {\em J. Internet Serv. Appl}, 9(1):16, 2018.
+
+\bibitem{Chinchali:2018}
+S.~Chinchali and al.
+\newblock Cellular network traffic scheduling with deep reinforcement learning.
+\newblock {\em 32nd AAAI Conf. Artif}, 32(1):766--774, 2018.
+
+\bibitem{sang:2020}
+Aimin Sang~San qi~Li.
+\newblock A predictability analysis of network traffic.
+\newblock {\em Internet of Things Journal}, 7(9):8572--8589, 2020.
+
+\bibitem{qiao:2000}
+Y.~Qiao, J.~Skicewicz, and P.~Dinda.
+\newblock An empirical study of the multiscale predictability of network
+  traffic.
+\newblock {\em IEEE}, page~76, 2004.
+
+\bibitem{rodoplu:2020}
+V.~Rodoplu, M.~Nakıp, D.~Tursel Eliiyi, and C.~Guzelis.
+\newblock A multi-scale algorithm for joint forecasting-scheduling to solve the
+  massive access problem of iot.
+\newblock {\em Internet of Things Journal}, 7(9):8572--8589, 2020.
+
+\bibitem{li:2000}
+A.~Sang and S.~Li.
+\newblock A predictability analysis of network traffic.
+\newblock {\em IEEE}, 2000.
+
+\bibitem{survey:2018}
+X.~Lei Z.~Ding, G.~Karagiannidis, R.~Schober, and V.~Bhargava J.~Yuan.
+\newblock A survey on non-orthogonal multiple access for 5g networks: Research
+  challenges and future trends.
+\newblock {\em Journal on Selected Areas in Communications}, 35(10):2181--2195,
+  2017.
+
+\bibitem{dunod}
+P.~Zanella, Y.~Ligier, and E.Lazard.
+\newblock {\em Architecture et technologie des ordinateurs}.
+\newblock Dunod, France, 6 edition, 2018.
+
+\end{thebibliography}

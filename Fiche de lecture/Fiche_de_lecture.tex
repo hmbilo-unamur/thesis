@@ -16,15 +16,38 @@
 
 \usepackage{graphicx}
 
+
 \graphicspath{ {../../images/} }
 
-\title{A Multi-Scale Algorithm for Joint
+\title{% 
+A Multi-Scale Algorithm for Joint
 Forecasting-Scheduling to Solve the Massive
-Access Problem of IoT}
+Access Problem of IoT
+\bigskip \\
+\large Fiche de lecture}
 
-\author{Hervé Mbilo}
+\author{Hervé Mbilo \smallskip \\ promoteur \vspace{0.0em} \\ Marie-Ange Remiche}
 
-\date{2020–01–13}
+\date{2023–01–01}
+
+\makeatletter
+\renewcommand\@biblabel[1]{}
+\renewenvironment{thebibliography}[1]
+     {\section*{\refname}%
+      \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+      \list{}%
+           {\leftmargin0pt
+            \@openbib@code
+            \usecounter{enumiv}}%
+      \sloppy
+      \clubpenalty4000
+      \@clubpenalty \clubpenalty
+      \widowpenalty4000%
+      \sfcode`\.\@m}
+     {\def\@noitemerr
+       {\@latex@warning{Empty `thebibliography' environment}}%
+      \endlist}
+\makeatother
 
 \begin{document}
 
@@ -99,6 +122,11 @@ Ce qui fait que ce bloc atteint le cas de base de la récursion et donc le MSA e
 
 \includegraphics[scale=0.7]{msa}
 
+\section{Conclusion}
 \subparagraph{} Bien que proposant des solutions concrètes pouvant répondre au problème d'accès massive dans une architecture qui utilise un Gateway IOT.
-les auteurs estime qu'elle présente néanmoins quelques limites. Premièrement,  vu que le gateway doit effectuer des prévisions et des planifications pour chaque station, et ce sur plusieurs échelles de temps, le temps de calcul est considérable lorsqu'il y a plus 6650 stations. Deuxièmement, les simulations ne prennent pas en compte les transmissions multi-canaux, ni même le transfert d'une zone de couverture à une autres.  
+les auteurs estime qu'elle présente néanmoins quelques limites. Premièrement,  vu que le gateway doit effectuer des prévisions et des planifications pour chaque station, et ce sur plusieurs échelles de temps, le temps de calcul est considérable lorsqu'il y a plus 6650 stations. Deuxièmement, les simulations ne prennent pas en compte les transmissions multi-canaux, ni même le transfert d'une zone de couverture à une autres.
+
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{resume}
 \end{document}

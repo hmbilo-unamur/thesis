@@ -1,10 +1,19 @@
 # Fdb version 4
-["pdflatex"] 1672765841 "d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture/Fiche_de_lecture.tex" "Fiche_de_lecture.pdf" "Fiche_de_lecture" 1672765843 0
+["bibtex Fiche_de_lecture"] 1672785315 "Fiche_de_lecture.aux" "Fiche_de_lecture.bbl" "Fiche_de_lecture" 1672785316 2
+  "./resume.bib" 1672778286 1863 d429b4402e8b7981651f6333ce0fa352 ""
+  "Fiche_de_lecture.aux" 1672785314 1803 0b70dc4f807e6dca2c9ced0db62e104f "pdflatex"
+  "d:/SOFTWARES/Latex/texlive/2022/texmf-dist/bibtex/bst/base/plain.bst" 1670875026 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
+  (generated)
+  "Fiche_de_lecture.bbl"
+  "Fiche_de_lecture.blg"
+  (rewritten before read)
+["pdflatex"] 1672785312 "d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture/Fiche_de_lecture.tex" "Fiche_de_lecture.pdf" "Fiche_de_lecture" 1672785316 0
   "../../images//msa.png" 1672755519 60551 0ec3f32ee1e0b371ddae514b4deb2ea0 ""
-  "Fiche_de_lecture.aux" 1672765843 1649 cd0b202906891f2843164e6be7b0c3e7 "pdflatex"
-  "Fiche_de_lecture.out" 1672765843 182 a42f1a1af8aae134b549518753b5e41d "pdflatex"
-  "Fiche_de_lecture.tex" 1672765840 13174 97234d4efe933f36d9450916ebb4888d ""
-  "d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture/Fiche_de_lecture.tex" 1672765840 13174 97234d4efe933f36d9450916ebb4888d ""
+  "Fiche_de_lecture.aux" 1672785314 1803 0b70dc4f807e6dca2c9ced0db62e104f "pdflatex"
+  "Fiche_de_lecture.bbl" 1672785316 1168 0232ec39b2b1eedf41b6f393dfd7b636 "bibtex Fiche_de_lecture"
+  "Fiche_de_lecture.out" 1672785314 275 c14bba384f362efbaef5959dacc6caf9 "pdflatex"
+  "Fiche_de_lecture.tex" 1672785307 13888 4b2f9c5cb01168b7c2d2bf4faab3cdf2 ""
+  "d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture/Fiche_de_lecture.tex" 1672785307 13888 4b2f9c5cb01168b7c2d2bf4faab3cdf2 ""
   "d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1670877066 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1670919707 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/SOFTWARES/Latex/texlive/2022/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1670917448 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
