@@ -75,7 +75,7 @@ Le gateway s'appuie sur le dernier modèle de trafic d'un dispositif connecté a
 \subparagraph{} Le fonctionnement des algorithmes MSF (Multi-scale Forecasting) est le suivant, pour chaque dispositif connecté désigné par i, une période de génération de traffic est définis, $\tau_i$. Elle correspond à la durée minimale entre chaque instance de génération de trafic successive.
 Le temps requis par les dispositifs connectés pour la génération d'un packet est un multiple de cette intervalle (en supposant que les dispositfs génèrent des données à intervalle régulier).
 Cette période est en corrélation avec l'horizon de prévision $\tau^{af}_i$.
-Il s'agit du laps de temps durant lequel le gateway G effectue une prévision précise du trafic d'un dispositf connectés. Les prévisions peuvent être précises jusqu'à un certains nombre d'échantillonsn désigné par K$_i$.
+Il s'agit du laps de temps durant lequel le gateway G effectue une prévision précise du trafic d'un dispositf connectés. Les prévisions peuvent être précises jusqu'à un certains nombre d'échantillons désigné par K$_i$.
 Soit pour chaque dispositf i, $\tau^{af}_i$ = K$_i$$\tau_i$.
 Une des contraintes importantes de cette approche est que la plus longue intervalle de planification possible, désignée par $\tau_sch$, doit être égale à l'horizon de prévision minimum de l'ensemble des appareils de la zone de couverture du gateway.
 Ainsi une plannification des canaux de transmission ne pourra pas être effectuée correctement, car les appareils dont l'horizon de prévision est supérieur à cette limite ne seront pas pris en compte.

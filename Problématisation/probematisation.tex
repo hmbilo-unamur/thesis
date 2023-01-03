@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}
+
+\usepackage{mathtools}
+
+\usepackage{graphicx}
+
+\usepackage{hyperref}
+
+\usepackage[utf8]{inputenc}
+
+\title{My LaTeX Title}
+
+\author{Guillaume Blanchet}
+
+\date{2020–01–13}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+Il y environ une dizaine d'année des chercheurs se sont pour la première fois interessés à la prédictibilité du trafic réseau en se basant, dans un premier temps sur des modèles statistiques.
+En 1997, Richard Woski a proposé un système de mesure et de prévision en appliquant parallèlement trois modèles de prévision, le processus autorégressif, la moyenne et la médiane.
+L'application des trois modèles permettrait au réseau d'automatiquement et dynamiquement, en fonction de caractéristiques tels que le temps de transmission et le débit, séléctionner le meilleur.
+Une autre étude, tout aussi intéressante, mené en 2000 par Aimin Sang et San-qi Li. 
+Leur approche se base sur deux paramètres, l'horizon de prévision, il s'agit de l'intervalle de temps pour lequel la prévision est effectuée, et l'évolution de l'erreur de cette prévision.
+Ce modèle est le fruit d'une combinaison des modèles autorégressif à moyenne mobile (ARMA) et Markov modulated Poisson process.
+Lors de cette étude il est ressorti deux points intéressants. Le premier est que l'étude a démontré, qu'il existe une corrélation entre l'horizon de prévision et la précision de la prévision.
+En effet, plus l'horizon augmente moins la prévision est précise. Le second point est qu'un meilleur résultat de prévision pouvait être atteint en filtrant les variations qui ne sont pas importantes pour l'allocation des ressources et en augmentant le degré de lissage des données.
+Celà dit, ce dernier point a été contredit par trois chercheurs de l'université de Northwestern dans l'état de l'Illinois, Yi Qiao, Jason Skiecewics et Peter Dinda.
+En effet, les chercheurs décourvrent, en analysant les traces des paquets générés, que la plupart contient un sweet spot. Il s'agit d'une limite de degré de lissage dans lequel les erreurs sont minimisées et les prévisions plus précises. Cependant, les erreurs sont plus importantes dès que cette limite est dépassée.
+Les approches analysées plus haut, sont des méthodes de type NTP (Non-Training-Based). Elle utilisent une approche basée sur des modèles mathématiques pour effectuer les prévisions, en s'appuyant sur des caractéristiques telles que la latence, le temps de transmission et le débit pour effectuer les calculs. Bien qu'efficace, ces méthodes comportent néanmoins des lacunes.
+Effectivements, les performances de la prévision sont fortement liées aux variations du trafic réseau, plus celles-ci sont importantes plus il y a des risques d'erreurs. Vu que les variations doivent être limitées, par des procédés tels que le lissage ou le filtrage, l'échelle de temps sur laquelle la prévision est effectuée est fortement impactée.
+Ce qui représente un défis majeur pour le traffic des objets connectés (IOT) qui nécessite de pouvoir répondre à une demande de connectivité massive sans cesse grandissante tout en garantissant un débit élevé et une latence maintenue au minimum.
+Pour pallier à ce genre de problème, des chercheurs se sont penchés sur des modèles prédictifs basés sur l'apprentissage automatique. Ces deniers execute un algorithme d'apprentissage dont le role est d'étudier l'historique des données disponible et ainsi ajuster les paramètres du modèle à la volée pour dynamiquement améliorer la qualité de service.
+Autre avantage de cette approche est que l'allocation des ressources peut être planifiées parméttant ainsi d'éviter au maximum les problèmes récurrents tels que les contentions, collisions et perte de données.
+C'est dans cet objectif, qu'à Melbourne, des chercheurs ont proposé une approche basé sur l'apprentissage par renforcement (RL) pour la planification de blocs de ressources. 
+En effet, en s'adaptant automatiquement aux différentes variations des signaux lors du processus de planification, les chercheurs ont montré que ce dernier s'auto-optimise. Ce qui, par conséquent, permet de gérer 14.7 pourcent de données en plus, tout en ayant un pourcentage d'erreur très bas. 
+Avec l'avènement de l'interne des objets, les réseaux autonomes deviennent depuis quelques années, l'objectifs ultime des chercheurs du domaine. C'est dans ce context que plusieurs paradigme, liés l'apprentissage autonome des réseaux ont vu le jour.
+Nous pouvons citer des techniques prometteuses telles que la classification du trafic, processus automatisé qui catégorise le trafic en fonction de divers paramètres, et la prédiction du trafic réseau (NTP - Network Traffic Prediction) qui est la base de ce travail.
+La majorité des études menéés sur les méthodes d'apprentissage automatique vu plus haut se concentrent sur la prévision de gros trafics, sur des réseaux à grande échelle. 
+
+\begin{itemize}
+
+    \item Hey
+    
+    \item Oh!
+    
+    \item Let’s
+    
+    \item Go!
+    
+    \end{itemize}
+    
+    \end{document}

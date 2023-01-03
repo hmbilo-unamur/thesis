@@ -1,8 +1,8 @@
-PWD d:/PROJETS/UNAMUR/Ids/Memoire/thesis
+PWD d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture
 INPUT d:/SOFTWARES/Latex/texlive/2022/texmf.cnf
 INPUT d:/SOFTWARES/Latex/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT d:/SOFTWARES/Latex/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche_de_lecture.tex
+INPUT d:/PROJETS/UNAMUR/Ids/Memoire/thesis/Fiche de lecture/Fiche_de_lecture.tex
 OUTPUT Fiche_de_lecture.log
 INPUT d:/SOFTWARES/Latex/texlive/2022/texmf-dist/tex/latex/base/article.cls
 INPUT d:/SOFTWARES/Latex/texlive/2022/texmf-dist/tex/latex/base/article.cls
