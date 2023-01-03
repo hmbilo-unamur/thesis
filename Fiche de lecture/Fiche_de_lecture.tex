@@ -8,11 +8,21 @@
 
 \usepackage{hyperref}
 
+\usepackage{textcomp}
+
+\usepackage{tipa}
+
 \usepackage[utf8]{inputenc}
 
-\title{My LaTeX Title}
+\usepackage{graphicx}
 
-\author{Guillaume Blanchet}
+\graphicspath{ {../../images/} }
+
+\title{A Multi-Scale Algorithm for Joint
+Forecasting-Scheduling to Solve the Massive
+Access Problem of IoT}
+
+\author{Hervé Mbilo}
 
 \date{2020–01–13}
 
@@ -35,7 +45,7 @@ la fluidité et la sécurité du traffic routier.
 \subparagraph{}Plus généralement, les technologies de l'information couplés 
 avec les appareils connectés permettent de mieux gérer les ressources et services urbains,tels que l'energie, la qualité de l'air et les parkings.
 La motivation majeur serait d'apporter une nette amélioration d'un point de vue environnemental, économique ou social.
-Statista estime que d'ici 2030 il pourrait y avoir plus de 29 milliards d'objets connectés à travers le monde.
+Ericson Mobility Report estime que d'ici 2024 il pourrait y avoir plus de 22 milliards d'objets connectés à travers le monde.
 \subparagraph{} Les systèmes de télécommunications ont des besoins très différents en termes de portée, de volume et de fréquences d'informations échangées. 
 Ainsi les objets connectés peuvent envoyer plus d'une centaine messages par jour, à des débits d'environ 385 kilobits par seconde (comme par exemple pour le protocole LTE-M).
 Ceci multiplié par le nombre de dispositifs connectés sans cesse grandissant, pousse les experts du domaine à proposer des technique de connectivité massive tout en garantissant des performances fiables ainsi qu'une meilleure qualité de service.
@@ -79,24 +89,16 @@ Il s'agit du laps de temps durant lequel le gateway G effectue une prévision pr
 Soit pour chaque dispositf i, $\tau^{af}_i$ = K$_i$$\tau_i$.
 Une des contraintes importantes de cette approche est que la plus longue intervalle de planification possible, désignée par $\tau_sch$, doit être égale à l'horizon de prévision minimum de l'ensemble des appareils de la zone de couverture du gateway.
 Ainsi une plannification des canaux de transmission ne pourra pas être effectuée correctement, car les appareils dont l'horizon de prévision est supérieur à cette limite ne seront pas pris en compte.
-L'approche novatrice dans ce tavail est que l'ensemble des bits provenants d'une station est représenté sur plusieurs échelles de temps. Pour ce faire, les bits sont additionnées, récursivement, à des blocs d'intervalle temporelle (time slots) de plus en plus large. 
-Aussi, nous avons la formule suivante : $X_{i} (B) = \sum_{b\epsilon S_B} X_{i} (b)$. Au niveau 0, l'ensemble des données contenu dans un bloc, désigné par b, prennent toute la taille de l'intervalle de temps (ou time slot).
-Ensuite chaque niveau supérieur $\iota + 1$ contient des ensembles contingus de blocs qui ne se chevauchent pas. Ainsi, par exemple, le niveau 0 contient l'ensembles de blocs seront regroupés au niveau $\iota + 1$ pour former un bloc désigné par B, et deviendront ainsi un sous bloc de B, que l'on peut nommer S$_B$. 
+L'approche novatrice dans ce tavail est que l'ensemble des bits provenants d'une station est représenté sur plusieurs échelles de temps. Pour ce faire, les bits sont additionnées, récursivement, à des blocs de slots (des intervalles de temps) de plus en plus large. 
+Aussi, nous avons la formule suivante : $X_{i} (B) = \sum_{b\epsilon S_B} X_{i} (b)$. Au niveau 0 (le plus bas), la taille d'un bloc correspond à la durée de l'intervalle dans couche MAC. A chaque niveau l'ensemble des bits générés par une station, désigné par X$_i$(b), arrive dans un bloc respectif, désigné par b.
+Ensuite à chaque niveau supérieur $\iota + 1$, les blocs sont regroupés en ensembles contingus de blocs. Ainsi, par exemple, le niveau $\iota$ contient l'ensembles des sous-blocs (S$_B$) qui formeront le bloc B dans le niveau $\iota + 1$. Nous pouvons donc définir X$_i$(B), comme l'ensemble des bits d'une station au niveau $\iota + 1$.
+\subparagraph{} Pour illustrer ce procédé, nous allons décrire le cas d'une opération à 3 niveaux, donc \textscl + 1 = 3.
+Nous commencons le processus de planification au deuxième niveau $\tau^{(2)}_{sch}$ et définissons $R^{(\iota)}_b$ comme un sous-bloc b (slot de couche MAC) au niveau $\iota$. Au lancement, une fonction déquilibrage de charge est executée, ce qui génère deux sous-blocs.
+Dans le premier $R^{(2)}_1$, se trouve les données des stations (1, 4, 6, 7) dont le nombre de bits de prévision est positive, idem pour le bloc $R^{(2)}_2$ qui selectionne les stations 1, 2, 3, 5, 7. Après ça, c'est au tour des blocs $R^{(1)}_1$ et $R^{(1)}_2$. Dans ce niveau seuls les stations du sous-bloc $R^{(1)}_1$ sont pris en compte pour la planification des ressources.
+Ce qui fait que ce bloc atteint le cas de base de la récursion et donc le MSA effectue la planification des ressources des stations 1,6,7 en se basant sur la prévision des rafales au niveau 0. L'algorithme continuera le processus recursive jusqu'à ce que toutes les stations du niveau deux soient planifiée. 
 
+\includegraphics[scale=0.7]{msa}
 
-
-
-
-\begin{itemize}
-
-\item Hey
-
-\item Oh!
-
-\item Let’s
-
-\item Go!
-
-\end{itemize}
-
+\subparagraph{} Bien que proposant des solutions concrètes pouvant répondre au problème d'accès massive dans une architecture qui utilise un Gateway IOT.
+les auteurs estime qu'elle présente néanmoins quelques limites. Premièrement,  vu que le gateway doit effectuer des prévisions et des planifications pour chaque station, et ce sur plusieurs échelles de temps, le temps de calcul est considérable lorsqu'il y a plus 6650 stations. Deuxièmement, les simulations ne prennent pas en compte les transmissions multi-canaux, ni même le transfert d'une zone de couverture à une autres.  
 \end{document}
